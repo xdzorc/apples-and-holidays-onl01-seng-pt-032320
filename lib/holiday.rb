@@ -92,12 +92,9 @@ def all_supplies_in_holidays(holiday_hash)
         new << x.capitalize!
         # binding.pry
       end
-        puts "  #{new.join(" ")}: #{stuff.join(", ")}"
-        
-      
+      puts "  #{new.join(" ")}: #{stuff.join(", ")}"
     end
   end
-  
 end
 
           
