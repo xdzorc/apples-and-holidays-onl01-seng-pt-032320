@@ -84,19 +84,19 @@ def all_supplies_in_holidays(holiday_hash)
   #   Fourth Of July: Fireworks, BBQ
   # etc.
   
-  holiday_hash.each do |season, holiday|
-    puts "#{season.to_s.capitalize!}:"
-    holiday.each do |name, stuff|
-               new=[]
-      name.to_s.split("_").collect do |x|
-        new << x.capitalize!
-        puts "  #{new.join(" ")}: "
-        stuff.each do |y|
-          print "#{y}, "
-        end
-      end
-    end
-  end
+  # holiday_hash.each do |season, holiday|
+  #   puts "#{season.to_s.capitalize!}:"
+  #   holiday.each do |name, stuff|
+  #             new=[]
+  #     name.to_s.split("_").collect do |x|
+  #       new << x.capitalize!
+  #       puts "  #{new.join(" ")}: "
+  #       stuff.each do |y|
+  #         print "#{y}, "
+  #       end
+  #     end
+  #   end
+  # end
   
   holiday_hash.each do |season, _holiday_hash|
     puts "#{season.to_s.capitalize}:"
@@ -105,7 +105,7 @@ def all_supplies_in_holidays(holiday_hash)
       puts "  #{capitalized_holiday}: #{supplies.join(', ')}"
     end
   end
-end
+
           
 end
 
