@@ -111,6 +111,7 @@ def all_holidays_with_bbq(holiday_hash)
       stuff.collect do |x|
         if x=="BBQ"
         name
+        end
       end
     end
   end
